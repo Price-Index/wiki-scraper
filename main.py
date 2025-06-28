@@ -100,6 +100,9 @@ def main():
                 continue  # Skip links with no text
             elif item_name == "JE":
                 continue  # Skip "JE" links
+            elif item_name == "BE":
+                continue  # Skip "BE" links
+
             item_url = "https://minecraft.wiki" + link['href']
             item_tuples.append((item_name, item_url))
 
